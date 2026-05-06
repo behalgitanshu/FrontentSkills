@@ -1,4 +1,3 @@
-import './App.css'
 import { Link } from 'react-router-dom'
 
 const CONSTANTS = {
@@ -7,7 +6,7 @@ const CONSTANTS = {
     'px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition-colors',
 }
 
-function Home() {
+function Home({ setActiveComponent }) {
   return (
     <>
       <section id="center">
@@ -17,6 +16,9 @@ function Home() {
               key={component}
               to={`/${component}`}
               className={CONSTANTS.linkClassname}
+              onClick={
+                setActiveComponent ? () => setActiveComponent(component) : null
+              }
             >
               {component}
             </Link>
