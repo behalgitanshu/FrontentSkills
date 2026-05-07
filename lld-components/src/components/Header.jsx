@@ -25,7 +25,7 @@ function Header({ activeComponent, setActiveComponent }) {
       <div className="ml-auto w-full flex items-center gap-4">
         {activeComponent && (
           <h2 className="w-full px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full font-bold">
-            {`${activeComponent} Container`}
+            {`${activeComponent}`}
           </h2>
         )}
       </div>

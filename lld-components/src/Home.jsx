@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const CONSTANTS = {
-  components: ['Toast'],
+  components: ['Tic Tac Toe', 'Toast'],
   linkClassname:
     'px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition-colors',
 }
